@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sky.png-39a6720af55435f11c1b9614fb9882ee.stex"
+path="res://.import/sky.png-f3f131929f67821a59ef0c3963cbca25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Textures/sky.png"
-dest_files=[ "res://.import/sky.png-39a6720af55435f11c1b9614fb9882ee.stex" ]
+source_file="res://qtpi.Waterfall/Assets/Textures/sky.png"
+dest_files=[ "res://.import/sky.png-f3f131929f67821a59ef0c3963cbca25.stex" ]
 
 [params]
 

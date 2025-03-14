@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/bridge.glb-c00c31b0f4ded90ee63bb3e3a56a930d.scn"
+path="res://.import/bridge.glb-dedcb260039c515e6eceef6e60962350.scn"
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Models/bridge.glb"
-dest_files=[ "res://.import/bridge.glb-c00c31b0f4ded90ee63bb3e3a56a930d.scn" ]
+source_file="res://qtpi.Waterfall/Assets/Models/bridge.glb"
+dest_files=[ "res://.import/bridge.glb-dedcb260039c515e6eceef6e60962350.scn" ]
 
 [params]
 

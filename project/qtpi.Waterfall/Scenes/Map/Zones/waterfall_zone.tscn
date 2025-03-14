@@ -84,6 +84,34 @@ radius = 60.0
 [node name="main_zone" type="Spatial"]
 script = ExtResource( 4 )
 
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 11, 0 )
+light_color = Color( 0, 0.929412, 1, 1 )
+light_indirect_energy = 2.0
+light_size = 10.0
+light_bake_mode = 2
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.707107, -0.707107, 0, 0.707107, -0.707107, 0, 11, 0 )
+light_color = Color( 0, 0.929412, 1, 1 )
+light_indirect_energy = 2.0
+light_size = 10.0
+light_bake_mode = 2
+
+[node name="DirectionalLight3" type="DirectionalLight" parent="."]
+transform = Transform( -4.37114e-08, -0.707107, 0.707107, 0, -0.707107, -0.707107, 1, -3.09086e-08, 3.09086e-08, 0, 11, 0 )
+light_color = Color( 0, 0.929412, 1, 1 )
+light_indirect_energy = 2.0
+light_size = 10.0
+light_bake_mode = 2
+
+[node name="DirectionalLight4" type="DirectionalLight" parent="."]
+transform = Transform( -4.37114e-08, 0.707107, -0.707107, 0, -0.707107, -0.707107, -1, -3.09086e-08, 3.09086e-08, 0, 11, 0 )
+light_color = Color( 0, 0.929412, 1, 1 )
+light_indirect_energy = 2.0
+light_size = 10.0
+light_bake_mode = 2
+
 [node name="editor_light" type="DirectionalLight" parent="."]
 transform = Transform( 0.947685, -0.0418184, 0.316455, -0.316024, -0.262549, 0.9117, 0.0449591, -0.964012, -0.26203, 0, 33.2939, 0 )
 editor_only = true
@@ -120,6 +148,7 @@ multimesh = SubResource( 390 )
 
 [node name="main" type="MeshInstance" parent="map_main"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0 )
+use_in_baked_light = true
 mesh = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="map_main/main"]
@@ -140,63 +169,63 @@ mesh = SubResource( 391 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38419e-07, 0, -1.49012e-08 )
 
 [node name="bridge_posts3" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 25, 0, -15 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 25, 0, -15 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge_posts4" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 21, 0, -15 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21, 0, -15 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge4" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 21, 0, -15 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 21, 0, -15 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge5" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 23, 0, -15 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 23, 0, -15 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge6" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 25, 0, -15 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 25, 0, -15 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge_posts5" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 33, 0, -39 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 33, 0, -39 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge_posts6" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 29, 0, -39 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 29, 0, -39 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge7" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 29, 0, -39 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 29, 0, -39 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge8" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 31, 0, -39 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 31, 0, -39 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge9" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 33, 0, -39 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 33, 0, -39 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge_posts7" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 11, 4, 41 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11, 4, 41 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge_posts8" parent="props" instance=ExtResource( 8 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 7, 4, 41 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7, 4, 41 )
 skeleton = NodePath("../bridge6")
 
 [node name="bridge10" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 7, 4, 41 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 7, 4, 41 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge11" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 9, 4, 41 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 9, 4, 41 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge12" parent="props" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-08, 0, -0.9025, 0, 1, 0, 1, 0, -3.94495e-08, 11, 4, 41 )
+transform = Transform( -4.37114e-08, 0, -0.95, 0, 1, 0, 1, 0, -4.15258e-08, 11, 4, 41 )
 skeleton = NodePath("../bridge3")
 
 [node name="bridge_posts" parent="props" instance=ExtResource( 8 )]
@@ -211,14 +240,53 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, 3 )
 [node name="bridge2" parent="props" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, 5 )
 
+[node name="bridge16" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -57, 4, 23 )
+
 [node name="bridge3" parent="props" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, 7 )
+
+[node name="bridge_posts11" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 4, 45 )
+
+[node name="bridge_posts12" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 4, 41 )
+
+[node name="bridge20" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -19, 4, 41 )
+
+[node name="bridge21" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -19, 4, 43 )
+
+[node name="bridge22" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -19, 4, 45 )
+
+[node name="bridge_posts13" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 4, 55 )
+
+[node name="bridge_posts14" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 4, 51 )
+
+[node name="bridge23" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -31, 4, 51 )
+
+[node name="bridge24" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -31, 4, 53 )
+
+[node name="bridge25" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -31, 4, 55 )
 
 [node name="bridge_posts9" parent="props" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -37 )
 
 [node name="bridge_posts10" parent="props" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -41 )
+
+[node name="bridge_posts15" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4, -23 )
+
+[node name="bridge_posts16" parent="props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4, -19 )
 
 [node name="bridge13" parent="props" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, -41 )
@@ -228,6 +296,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, -39 )
 
 [node name="bridge15" parent="props" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, -13, 4, -37 )
+
+[node name="bridge17" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, 1, 4, -23 )
+
+[node name="bridge18" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, 1, 4, -21 )
+
+[node name="bridge19" parent="props" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.95, 1, 4, -19 )
 
 [node name="echoflower" parent="props" instance=ExtResource( 12 )]
 transform = Transform( -0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 9, 4, -6 )
@@ -256,8 +333,20 @@ transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 15, 4, 75 )
 [node name="waterfall_reeds1" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4.75, 11 )
 
+[node name="waterfall_reeds47" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 4.75, 14 )
+
 [node name="waterfall_reeds12" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4.75, -42 )
+
+[node name="waterfall_reeds35" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 4.75, -47 )
+
+[node name="waterfall_reeds37" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4.75, -18 )
+
+[node name="waterfall_reeds36" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4.75, -52 )
 
 [node name="waterfall_reeds14" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.75, -40 )
@@ -283,14 +372,47 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.75, -26 )
 [node name="waterfall_reeds16" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0.75, -30 )
 
+[node name="waterfall_reeds32" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.75, -64 )
+
+[node name="waterfall_reeds33" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.75, -65 )
+
 [node name="waterfall_reeds4" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4.75, 12 )
+
+[node name="waterfall_reeds40" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4.75, 48 )
+
+[node name="waterfall_reeds41" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4.75, 49 )
+
+[node name="waterfall_reeds42" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 4.75, 51 )
+
+[node name="waterfall_reeds43" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4.75, 55 )
+
+[node name="waterfall_reeds44" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 4.75, 50 )
+
+[node name="waterfall_reeds45" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 4.75, 55 )
+
+[node name="waterfall_reeds46" parent="props" instance=ExtResource( 21 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 4.75, 42 )
 
 [node name="waterfall_reeds9" parent="props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4.75, -14 )
 
 [node name="waterfall_reeds2" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4.75, 10 )
+
+[node name="waterfall_reeds48" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 4.75, 10 )
+
+[node name="waterfall_reeds49" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 4.75, 45 )
 
 [node name="waterfall_reeds5" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4.75, 11 )
@@ -310,11 +432,35 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4.75, -15 )
 [node name="waterfall_reeds3" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4.75, 17 )
 
+[node name="waterfall_reeds38" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4.75, 45 )
+
+[node name="waterfall_reeds39" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4.75, 51 )
+
 [node name="waterfall_reeds11" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4.75, -40 )
 
+[node name="waterfall_reeds34" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 4.75, -51 )
+
 [node name="waterfall_reeds13" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0.75, -41 )
+
+[node name="waterfall_reeds27" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0.75, -54 )
+
+[node name="waterfall_reeds28" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0.75, -59 )
+
+[node name="waterfall_reeds29" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0.75, -60 )
+
+[node name="waterfall_reeds30" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0.75, -54 )
+
+[node name="waterfall_reeds31" parent="props" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.75, -69 )
 
 [node name="waterfall_reeds17" parent="props" instance=ExtResource( 22 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.75, -29 )
@@ -343,6 +489,12 @@ transform = Transform( -3.27835e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, -3.27835e-08
 [node name="lilypad31" parent="props" instance=ExtResource( 24 )]
 transform = Transform( 0.75, 0, 4.26326e-14, 0, 0.75, 0, -4.26326e-14, 0, 0.75, -28, 3.5, 29 )
 
+[node name="lilypad94" parent="props" instance=ExtResource( 24 )]
+transform = Transform( 0.75, 0, 3.90799e-14, 0, 0.75, 0, -3.90799e-14, 0, 0.75, -48.5, 3.5, 27.5 )
+
+[node name="lilypad95" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -3.27836e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27836e-08, -49.5, 3.5, 29.5 )
+
 [node name="lilypad2" parent="props" instance=ExtResource( 24 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -14, 3.5, 25 )
 
@@ -363,6 +515,18 @@ transform = Transform( -0.75, 0, -6.55671e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.75
 
 [node name="lilypad8" parent="props" instance=ExtResource( 24 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -9, 3.5, -53 )
+
+[node name="lilypad87" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -13, 3.5, -57 )
+
+[node name="lilypad88" parent="props" instance=ExtResource( 24 )]
+transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -13, 3.5, -45 )
+
+[node name="lilypad89" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -3.27835e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, -3.27835e-08, -13, 3.5, -34 )
+
+[node name="lilypad90" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -0.75, 0, 6.55671e-08, 0, 0.75, 0, -6.55671e-08, 0, -0.75, -14, 3.5, -25 )
 
 [node name="lilypad9" parent="props" instance=ExtResource( 24 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 3, 3.5, 34 )
@@ -390,6 +554,18 @@ transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 15, -0.5, -19 )
 
 [node name="lilypad56" parent="props" instance=ExtResource( 24 )]
 transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, 24, -0.5, -31 )
+
+[node name="lilypad73" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, 24, -0.5, -59 )
+
+[node name="lilypad74" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -0.75, 0, -6.5567e-08, 0, 0.75, 0, 6.5567e-08, 0, -0.75, 20, -0.5, -51 )
+
+[node name="lilypad75" parent="props" instance=ExtResource( 24 )]
+transform = Transform( 9.83506e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, 9.83506e-08, 11, -0.5, -58 )
+
+[node name="lilypad76" parent="props" instance=ExtResource( 24 )]
+transform = Transform( 0.75, 0, 1.31134e-07, 0, 0.75, 0, -1.31134e-07, 0, 0.75, 20, -0.5, -56 )
 
 [node name="lilypad57" parent="props" instance=ExtResource( 24 )]
 transform = Transform( 9.83506e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, 9.83506e-08, 17, -0.5, -37 )
@@ -421,6 +597,9 @@ transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -14, 3.5, 17 )
 [node name="lilypad32" parent="props" instance=ExtResource( 25 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -25, 3.5, 27 )
 
+[node name="lilypad93" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -47, 3.5, 29 )
+
 [node name="lilypad33" parent="props" instance=ExtResource( 25 )]
 transform = Transform( -0.75, 0, -6.55671e-08, 0, 0.75, 0, 6.55671e-08, 0, -0.75, -17, 3.5, 29 )
 
@@ -429,6 +608,18 @@ transform = Transform( 9.83506e-08, 0, -0.75, 0, 0.75, 0, 0.75, 0, 9.83506e-08, 
 
 [node name="lilypad14" parent="props" instance=ExtResource( 25 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -13, 3.5, 23 )
+
+[node name="lilypad96" parent="props" instance=ExtResource( 24 )]
+transform = Transform( 0.75, 0, 3.90799e-14, 0, 0.75, 0, -3.90799e-14, 0, 0.75, -45.5, 3.5, 16.5 )
+
+[node name="lilypad97" parent="props" instance=ExtResource( 24 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -36.5, 3.5, 18.5 )
+
+[node name="lilypad98" parent="props" instance=ExtResource( 25 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -44.5, 3.5, 18.5 )
+
+[node name="lilypad99" parent="props" instance=ExtResource( 25 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -38.5, 3.5, 17.5 )
 
 [node name="lilypad15" parent="props" instance=ExtResource( 25 )]
 transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -12, 3.5, 1.49012e-08 )
@@ -444,6 +635,21 @@ transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08
 
 [node name="lilypad19" parent="props" instance=ExtResource( 25 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -11, 3.5, -54 )
+
+[node name="lilypad91" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -13, 3.5, -28 )
+
+[node name="lilypad92" parent="props" instance=ExtResource( 25 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -11, 3.5, -21 )
+
+[node name="lilypad100" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -58, 3.5, 19 )
+
+[node name="lilypad101" parent="props" instance=ExtResource( 25 )]
+transform = Transform( -3.27835e-08, 0, 0.75, 0, 0.75, 0, -0.75, 0, -3.27835e-08, -56, 3.5, 26 )
+
+[node name="lilypad86" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -14, 3.5, -58 )
 
 [node name="lilypad20" parent="props" instance=ExtResource( 25 )]
 transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 1, 3.5, -52 )
@@ -484,6 +690,18 @@ transform = Transform( 0.75, 0, 1.31134e-07, 0, 0.75, 0, -1.31134e-07, 0, 0.75, 
 [node name="lilypad62" parent="props" instance=ExtResource( 25 )]
 transform = Transform( -0.75, 0, -1.96701e-07, 0, 0.75, 0, 1.96701e-07, 0, -0.75, 15, -0.5, -39 )
 
+[node name="lilypad69" parent="props" instance=ExtResource( 25 )]
+transform = Transform( -0.75, 0, -1.96701e-07, 0, 0.75, 0, 1.96701e-07, 0, -0.75, 17, -0.5, -52 )
+
+[node name="lilypad70" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 2.29485e-07, 0, -0.75, 0, 0.75, 0, 0.75, 0, 2.29485e-07, 21, -0.5, -57 )
+
+[node name="lilypad71" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 2.29485e-07, 0, -0.75, 0, 0.75, 0, 0.75, 0, 2.29485e-07, 10, -0.5, -60 )
+
+[node name="lilypad72" parent="props" instance=ExtResource( 25 )]
+transform = Transform( 0.75, 0, 2.62268e-07, 0, 0.75, 0, -2.62268e-07, 0, 0.75, 27, -0.5, -52 )
+
 [node name="lilypad63" parent="props" instance=ExtResource( 25 )]
 transform = Transform( 2.29485e-07, 0, -0.75, 0, 0.75, 0, 0.75, 0, 2.29485e-07, 26, -0.5, -36 )
 
@@ -516,6 +734,45 @@ transform = Transform( 0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -18, 3.5, 54 )
 
 [node name="lilypad26" parent="props" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3.5, 26 )
+
+[node name="lilypad65" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3.5, -12 )
+
+[node name="lilypad77" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -0.5, -1 )
+
+[node name="lilypad78" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 21, -0.5, -3 )
+
+[node name="lilypad82" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17, -0.5, -33 )
+
+[node name="lilypad84" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14, -0.5, -15 )
+
+[node name="lilypad85" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -0.5, -14 )
+
+[node name="lilypad83" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -0.5, -32 )
+
+[node name="lilypad79" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, 26, -0.5, -28 )
+
+[node name="lilypad80" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -1, 0, 1.03316e-07, 0, 1, 0, -1.03316e-07, 0, -1, 21, -0.5, -42 )
+
+[node name="lilypad81" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, -1.58933e-08, 0, 1, 0, 1.58933e-08, 0, 1, 27, -0.5, -38 )
+
+[node name="lilypad66" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 3.5, -16 )
+
+[node name="lilypad67" parent="props" instance=ExtResource( 23 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 3.5, -16 )
+
+[node name="lilypad68" parent="props" instance=ExtResource( 23 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -2, 3.5, -37 )
 
 [node name="lilypad27" parent="props" instance=ExtResource( 23 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 3.5, 30 )
@@ -637,6 +894,191 @@ transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -173, -2, 117.5 
 water_replace = ExtResource( 6 )
 sand = false
 
+[node name="water93" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -213, -2, 117.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water94" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -253, -2, 117.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water95" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, 77.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water96" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, 37.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water105" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -2.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water106" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -42.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water107" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -82.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water108" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -82.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water112" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -122.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water113" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -122.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water114" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -162.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water115" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -162.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water116" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -202.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water117" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -202.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water118" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -242.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water119" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -242.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water120" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -282.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water121" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -282.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water122" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -322.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water123" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -322.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water124" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -362.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water125" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -362.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water126" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -402.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water127" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -402.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water128" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -229, -2, -442.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water129" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -442.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water109" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -42.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water110" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, -2.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water111" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -269, -2, 37.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water97" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -189, -2, 65.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water98" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -149, -2, 65.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water99" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -109, -2, 65.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water100" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -145, -2, 25.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water101" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -145, -2, -14.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water102" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -145, -2, -54.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water103" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -145, -2, -94.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
+[node name="water104" parent="lake_water" instance=ExtResource( 5 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -145, -2, -134.5 )
+water_replace = ExtResource( 6 )
+sand = false
+
 [node name="water26" parent="lake_water" instance=ExtResource( 5 )]
 transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -125, -2, 157.5 )
 water_replace = ExtResource( 6 )
@@ -663,7 +1105,7 @@ water_replace = ExtResource( 6 )
 sand = false
 
 [node name="water35" parent="lake_water" instance=ExtResource( 5 )]
-transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -85, -2, 157.5 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -77, -2, 157.5 )
 water_replace = ExtResource( 6 )
 sand = false
 
@@ -1095,7 +1537,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, -0.5
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, -0.5, -51 )
 
 [node name="waterfall3" parent="waterfalls" instance=ExtResource( 9 )]
-transform = Transform( -6.11959e-08, -0.865758, 0.976296, 0, 3.90518, 0.21644, -1.4, 3.78435e-08, -4.26753e-08, 34, -10.75, -53 )
+transform = Transform( -6.11959e-08, -0.865758, 0.976296, 0, 3.90518, 0.21644, -1.4, 3.78435e-08, -4.26753e-08, 34, -10.7183, -53 )
 
 [node name="waterfall_particle9" parent="waterfalls" instance=ExtResource( 10 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32, -1, -51 )
@@ -1125,7 +1567,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14.5, -37 )
 
 [node name="waterfall5" parent="waterfalls" instance=ExtResource( 9 )]
-transform = Transform( -6.11959e-08, -0.865758, 0.976296, 0, 3.90518, 0.21644, -1.4, 3.78435e-08, -4.26753e-08, 34, -10.75, -15 )
+transform = Transform( -6.11959e-08, -0.865758, 0.976296, 0, 3.90518, 0.21644, -1.4, 3.78435e-08, -4.26753e-08, 34, -10.7881, -15 )
 
 [node name="waterfall_particle17" parent="waterfalls" instance=ExtResource( 10 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.5, -1, -13 )
@@ -1140,7 +1582,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14.5, -13 )
 
 [node name="waterfall6" parent="waterfalls" instance=ExtResource( 9 )]
-transform = Transform( -6.11959e-08, -0.868241, 0.984808, 0, 4.92404, 0.173648, -1.4, 3.7952e-08, -4.30473e-08, 34, -9.5, 11 )
+transform = Transform( -6.11959e-08, -0.868241, 0.984808, 0, 4.92404, 0.173648, -1.4, 3.7952e-08, -4.30473e-08, 34.0121, -9.38104, 11 )
 
 [node name="waterfall_particle21" parent="waterfalls" instance=ExtResource( 10 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.75, 3, 13 )
@@ -1155,7 +1597,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36, -14.5, 13 )
 
 [node name="waterfall7" parent="waterfalls" instance=ExtResource( 9 )]
-transform = Transform( -6.11959e-08, -0.868241, 0.984808, 0, 4.92404, 0.173648, -1.4, 3.7952e-08, -4.30473e-08, 34, -9.5, 41 )
+transform = Transform( -6.11959e-08, -0.868241, 0.984808, 0, 4.92404, 0.173648, -1.4, 3.7952e-08, -4.30473e-08, 34, -9.36137, 41 )
 
 [node name="waterfall_particle25" parent="waterfalls" instance=ExtResource( 10 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.75, 3, 43 )
@@ -1187,12 +1629,13 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12, -0.
 [node name="portals" type="Spatial" parent="."]
 
 [node name="tutorial_spawn" parent="portals" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.7353, 3.83631, -48.974 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -49.0512, 5.51172, 23.0098 )
 entrance_id = "tutorial_spawn"
 
 [node name="fish_zones" type="Spatial" parent="."]
 
 [node name="FishZone" type="Area" parent="fish_zones"]
+transform = Transform( 281.359, 0, 0, 0, 1.87741, 0, 0, 0, 383.939, -26.6514, 10.0951, 0 )
 monitoring = false
 script = ExtResource( 36 )
 

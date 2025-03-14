@@ -32,8 +32,8 @@ func _rain_env(toggle, force = false):
 	rain = toggle
 	
 	if toggle:
-		des_fog = 20
-		des_fog_end = 60
+		des_fog = 10
+		des_fog_end = 30
 		
 		des_color = Color("#000000")
 		des_light = 0.03
@@ -45,6 +45,6 @@ func _rain_env(toggle, force = false):
 		des_light = 0.06
 
 func _dist_update():
-	default_fog = [25, 20, 10, 6][PlayerData.player_options.view_distance]
-	default_fog_end = [75, 60, 35, 12][PlayerData.player_options.view_distance]
+	default_fog = [12.5, 10, 8, 6][PlayerData.player_options.view_distance]
+	default_fog_end = [37.5, 30, 24, 18][PlayerData.player_options.view_distance]
 	_rain_env(rain, true)

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/waterfall-map.glb-7dbeb7d2a5c1e4ce4457054520691e8f.scn"
+path="res://.import/waterfall-map.glb-a018f132c2f41920778ac6f90556d1da.scn"
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Models/waterfall-map.glb"
-dest_files=[ "res://.import/waterfall-map.glb-7dbeb7d2a5c1e4ce4457054520691e8f.scn" ]
+source_file="res://qtpi.Waterfall/Assets/Models/waterfall-map.glb"
+dest_files=[ "res://.import/waterfall-map.glb-a018f132c2f41920778ac6f90556d1da.scn" ]
 
 [params]
 

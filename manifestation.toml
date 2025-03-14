@@ -1,0 +1,19 @@
+id = "qtpi.Waterfall"
+name = "Waterfall Map (UNDERTALE)"
+description = "Adds a new map in the form of a faithful recreation of UNDERTALE's Waterfall!"
+version = "1.0.0"
+homepage = "https://github.com/qtpiii/qtpi.Waterfall"
+author = "qtpi"
+
+icon = "icon.png"
+readme = "README.md"
+
+[project]
+godot = "./project/project.godot"
+
+[[dependencies]]
+thunderstore_version = "NotNet-GDWeave-2.0.12"
+
+[[dependencies]]
+id = "Sulayre.Lure"
+thunderstore_version = "TeamLure-LureRefreshed-4.3.1"

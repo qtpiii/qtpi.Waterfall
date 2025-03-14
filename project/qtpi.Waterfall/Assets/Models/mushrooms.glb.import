@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/mushrooms.glb-33303cc810689aa22ad6c54fc2d1c6fe.scn"
+path="res://.import/mushrooms.glb-ef4c55080621fc1859c9d16ae5adfe3b.scn"
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Models/mushrooms.glb"
-dest_files=[ "res://.import/mushrooms.glb-33303cc810689aa22ad6c54fc2d1c6fe.scn" ]
+source_file="res://qtpi.Waterfall/Assets/Models/mushrooms.glb"
+dest_files=[ "res://.import/mushrooms.glb-ef4c55080621fc1859c9d16ae5adfe3b.scn" ]
 
 [params]
 

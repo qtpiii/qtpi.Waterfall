@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/treegradient.png-cc8eacb3eb6c64913037fa69ebb6886a.stex"
+path="res://.import/treegradient.png-45b96932d7417474ee97644e9e47e900.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Textures/treegradient.png"
-dest_files=[ "res://.import/treegradient.png-cc8eacb3eb6c64913037fa69ebb6886a.stex" ]
+source_file="res://qtpi.Waterfall/Assets/Textures/treegradient.png"
+dest_files=[ "res://.import/treegradient.png-45b96932d7417474ee97644e9e47e900.stex" ]
 
 [params]
 

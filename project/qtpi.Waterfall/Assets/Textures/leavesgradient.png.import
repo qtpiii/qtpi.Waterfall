@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leavesgradient.png-bfc264470558340a8cab0d00e6fe1635.stex"
+path="res://.import/leavesgradient.png-93d3ebdf0b903f8941516056e7740892.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/qtpi.Waterfall/Assets/Textures/leavesgradient.png"
-dest_files=[ "res://.import/leavesgradient.png-bfc264470558340a8cab0d00e6fe1635.stex" ]
+source_file="res://qtpi.Waterfall/Assets/Textures/leavesgradient.png"
+dest_files=[ "res://.import/leavesgradient.png-93d3ebdf0b903f8941516056e7740892.stex" ]
 
 [params]
 
