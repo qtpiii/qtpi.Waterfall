@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://mods/qtpi.Waterfall/Assets/Materials/lilypad2.tres" type="Material" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[node name="lilypad2" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = ExtResource( 1 )

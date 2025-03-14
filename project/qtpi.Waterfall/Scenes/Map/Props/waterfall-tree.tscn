@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://mods/qtpi.Waterfall/Assets/Materials/waterfall-tree.tres" type="Material" id=1]
+[ext_resource path="res://mods/qtpi.Waterfall/Assets/Models/tree.tres" type="ArrayMesh" id=2]
+[ext_resource path="res://mods/qtpi.Waterfall/Assets/Shaders/waterfall_leaf_material.tres" type="Material" id=3]
+[ext_resource path="res://Scenes/Map/Props/prop_shadow.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+uniform vec4 albedo : hint_color;
+uniform vec3 emission = vec3(1.0, 1.0, 1.0);
+uniform float wobble_speed = 1.0;
+uniform float wobble_amt = 1.0;
+
+void vertex() {
+	VERTEX.x += sin(TIME * VERTEX.x * wobble_speed) * wobble_amt;
+	VERTEX.y += sin(TIME * VERTEX.y * wobble_speed) * wobble_amt;
+	VERTEX.z += sin(TIME * VERTEX.z * wobble_speed) * wobble_amt;
+}
+
+void fragment() {
+	ALBEDO = albedo.rgb;
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 1, 1, 1, 1 )
+shader_param/emission = Vector3( 0.2, 0.4, 0.4 )
+shader_param/wobble_speed = 0.05
+shader_param/wobble_amt = 0.1
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 0.482353, 0.984314, 0.996078, 1 )
+shader_param/emission = Vector3( 0.2, 0.4, 0.4 )
+shader_param/wobble_speed = 0.05
+shader_param/wobble_amt = 0.1
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 0.0156863, 0.470588, 0.670588, 1 )
+shader_param/emission = Vector3( 0.2, 0.4, 0.4 )
+shader_param/wobble_speed = 0.05
+shader_param/wobble_amt = 0.1
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 0.0156863, 0.145098, 0.305882, 1 )
+shader_param/emission = Vector3( 0.2, 0.4, 0.4 )
+shader_param/wobble_speed = 0.05
+shader_param/wobble_amt = 0.1
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = SubResource( 1 )
+shader_param/albedo = Color( 0, 0, 0, 1 )
+shader_param/emission = Vector3( 0, 0, 0 )
+shader_param/wobble_speed = 0.05
+shader_param/wobble_amt = 0.1
+
+[sub_resource type="CylinderShape" id=7]
+height = 6.0
+radius = 0.25
+
+[node name="waterfall-tree" type="MeshInstance"]
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 1 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 3 )
+material/3 = ExtResource( 3 )
+material/4 = SubResource( 4 )
+material/5 = SubResource( 5 )
+material/6 = SubResource( 6 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+shape = SubResource( 7 )
+
+[node name="shadow" parent="." instance=ExtResource( 4 )]
+transform = Transform( 3, 0, 0, 0, -1.31134e-07, 3, 0, -3, -1.31134e-07, 0, 0.0608994, 0 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0 )
+light_color = Color( 0.482353, 0.984314, 0.996078, 1 )
+light_energy = 0.6
+omni_range = 15.0

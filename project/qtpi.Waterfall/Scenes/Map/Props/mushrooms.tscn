@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://mods/qtpi.Waterfall/Assets/Models/mushrooms.tres" type="ArrayMesh" id=1]
+
+[node name="mushrooms" type="MeshInstance"]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0 )
+mesh = ExtResource( 1 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+light_color = Color( 0.482353, 0.984314, 0.996078, 1 )
+light_energy = 0.6
+omni_range = 7.5
+omni_attenuation = 2.0
