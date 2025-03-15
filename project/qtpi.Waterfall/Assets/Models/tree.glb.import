@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/tree.glb-e19b65e4faa9b06ed585bc8e072e7a1d.scn"
+path="res://.import/tree.glb-cc3630dbfda5b00ba5fd16fe8cda4ed3.scn"
 
 [deps]
 
-source_file="res://qtpi.Waterfall/Assets/Models/tree.glb"
-dest_files=[ "res://.import/tree.glb-e19b65e4faa9b06ed585bc8e072e7a1d.scn" ]
+source_file="res://mods/qtpi.Waterfall/Assets/Models/tree.glb"
+dest_files=[ "res://.import/tree.glb-cc3630dbfda5b00ba5fd16fe8cda4ed3.scn" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/waterfall_tuft1.png-4fa9c0780a19243f9fc92efbc055e5c9.stex"
+path="res://.import/waterfall_tuft1.png-c81acf79241a7588279c8fd18e1ec645.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://qtpi.Waterfall/Assets/Textures/waterfall_tuft1.png"
-dest_files=[ "res://.import/waterfall_tuft1.png-4fa9c0780a19243f9fc92efbc055e5c9.stex" ]
+source_file="res://mods/qtpi.Waterfall/Assets/Textures/waterfall_tuft1.png"
+dest_files=[ "res://.import/waterfall_tuft1.png-c81acf79241a7588279c8fd18e1ec645.stex" ]
 
 [params]
 

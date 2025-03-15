@@ -2,15 +2,15 @@
 
 importer="texture_array"
 type="TextureArray"
-path="res://.import/waterfall_zone.png-caf1ff2617089e0c1b6896604f01d561.texarr"
+path="res://.import/waterfall_zone.png-89c1157285756e5da89939b4e8339ccd.texarr"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://qtpi.Waterfall/Scenes/Map/Zones/waterfall_zone.png"
-dest_files=[ "res://.import/waterfall_zone.png-caf1ff2617089e0c1b6896604f01d561.texarr" ]
+source_file="res://mods/qtpi.Waterfall/Scenes/Map/Zones/waterfall_zone.png"
+dest_files=[ "res://.import/waterfall_zone.png-89c1157285756e5da89939b4e8339ccd.texarr" ]
 
 [params]
 

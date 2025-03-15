@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/echoflower.glb-1897b6920e95ee66b2ea30b96f89d252.scn"
+path="res://.import/echoflower.glb-112248d78a1495deccce1ec1884b55f1.scn"
 
 [deps]
 
-source_file="res://qtpi.Waterfall/Assets/Models/echoflower.glb"
-dest_files=[ "res://.import/echoflower.glb-1897b6920e95ee66b2ea30b96f89d252.scn" ]
+source_file="res://mods/qtpi.Waterfall/Assets/Models/echoflower.glb"
+dest_files=[ "res://.import/echoflower.glb-112248d78a1495deccce1ec1884b55f1.scn" ]
 
 [params]
 

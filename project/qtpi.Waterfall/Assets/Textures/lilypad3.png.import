@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilypad3.png-c81fae4fd8b64c7f4d0c07d3ceaa9c0d.stex"
+path="res://.import/lilypad3.png-d129d363acd3247dc65fb020e7af4d26.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://qtpi.Waterfall/Assets/Textures/lilypad3.png"
-dest_files=[ "res://.import/lilypad3.png-c81fae4fd8b64c7f4d0c07d3ceaa9c0d.stex" ]
+source_file="res://mods/qtpi.Waterfall/Assets/Textures/lilypad3.png"
+dest_files=[ "res://.import/lilypad3.png-d129d363acd3247dc65fb020e7af4d26.stex" ]
 
 [params]
 
